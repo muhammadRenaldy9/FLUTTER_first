@@ -7,21 +7,21 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
+  // Widget ini adalah root dari aplikasi Anda.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        // This is the theme of your application.
+        // Ini adalah tema aplikasi Anda.
         //
-        // Try running your application with "flutter run". You'll see the
-        // application has a blue toolbar. Then, without quitting the app, try
-        // changing the primarySwatch below to Colors.green and then invoke
-        // "hot reload" (press "r" in the console where you ran "flutter run",
-        // or simply save your changes to "hot reload" in a Flutter IDE).
-        // Notice that the counter didn't reset back to zero; the application
-        // is not restarted.
+        // Coba jalankan aplikasi Anda dengan "flutter run". Anda akan melihat
+        // aplikasi memiliki bilah alat berwarna biru. Kemudian, tanpa keluar dari aplikasi, coba
+        // mengubah primarySwatch di bawah menjadi Colors.green lalu aktifkan
+        // "hot reload" (tekan "r" di konsol tempat Anda menjalankan "flutter run",
+        // atau cukup simpan perubahan Anda ke "hot reload" di Flutter IDE).
+        // Perhatikan bahwa penghitung tidak direset kembali ke nol; aplikasi
+        // tidak dimulai ulang.
         primarySwatch: Colors.blue,
       ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
@@ -32,14 +32,14 @@ class MyApp extends StatelessWidget {
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
 
-  // This widget is the home page of your application. It is stateful, meaning
-  // that it has a State object (defined below) that contains fields that affect
-  // how it looks.
+  // Widget ini adalah beranda aplikasi Anda. Itu stateful, artinya
+  // bahwa ia memiliki objek Status (didefinisikan di bawah) yang berisi bidang yang memengaruhi
+  // bagaimana tampilannya.
 
-  // This class is the configuration for the state. It holds the values (in this
-  // case the title) provided by the parent (in this case the App widget) and
-  // used by the build method of the State. Fields in a Widget subclass are
-  // always marked "final".
+  // Kelas ini adalah konfigurasi untuk negara bagian. Ini memegang nilai-nilai (dalam hal ini
+  // ganti judul) yang disediakan oleh induk (dalam hal ini widget Aplikasi) dan
+  // digunakan oleh metode build Negara. Bidang dalam subkelas Widget adalah
+  // selalu ditandai "final".
 
   final String title;
 
@@ -52,47 +52,47 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _incrementCounter() {
     setState(() {
-      // This call to setState tells the Flutter framework that something has
-      // changed in this State, which causes it to rerun the build method below
-      // so that the display can reflect the updated values. If we changed
-      // _counter without calling setState(), then the build method would not be
-      // called again, and so nothing would appear to happen.
+      // Panggilan ke setState ini memberi tahu framework Flutter bahwa ada sesuatu
+      // diubah dalam keadaan ini, yang menyebabkannya menjalankan kembali metode build di bawah
+      // sehingga tampilan dapat mencerminkan nilai yang diperbarui. Jika kita berubah
+      // _counter tanpa memanggil setState(), maka metode build tidak akan
+      // menelepon lagi, dan sepertinya tidak ada yang terjadi.
       _counter++;
     });
   }
 
   @override
   Widget build(BuildContext context) {
-    // This method is rerun every time setState is called, for instance as done
-    // by the _incrementCounter method above.
+    // Metode ini dijalankan ulang setiap kali setState dipanggil, misalnya selesai
+    // dengan metode _incrementCounter di atas.
     //
-    // The Flutter framework has been optimized to make rerunning build methods
-    // fast, so that you can just rebuild anything that needs updating rather
-    // than having to individually change instances of widgets.
+    // Framework Flutter telah dioptimalkan untuk menjalankan kembali metode build
+    // cepat, sehingga Anda bisa membangun kembali apa saja yang perlu diperbarui
+    // daripada harus mengubah instance widget satu per satu.
     return Scaffold(
       appBar: AppBar(
-        // Here we take the value from the MyHomePage object that was created by
-        // the App.build method, and use it to set our appbar title.
+        // Di sini kita mengambil nilai dari objek MyHomePage yang dibuat oleh
+        // metode App.build, dan gunakan untuk menyetel judul appbar kita.
         title: Text(widget.title),
       ),
       body: Center(
-        // Center is a layout widget. It takes a single child and positions it
-        // in the middle of the parent.
+        // Tengah adalah widget tata letak. Dibutuhkan satu anak dan memposisikannya
+        // di tengah induk.
         child: Column(
-          // Column is also a layout widget. It takes a list of children and
-          // arranges them vertically. By default, it sizes itself to fit its
-          // children horizontally, and tries to be as tall as its parent.
+          // Kolom juga merupakan widget tata letak. Dibutuhkan daftar anak-anak dan
+          // mengaturnya secara vertikal. Secara default, ini menyesuaikan ukurannya sendiri
+          // anak secara horizontal, dan berusaha setinggi induknya.
           //
-          // Invoke "debug painting" (press "p" in the console, choose the
-          // "Toggle Debug Paint" action from the Flutter Inspector in Android
-          // Studio, or the "Toggle Debug Paint" command in Visual Studio Code)
-          // to see the wireframe for each widget.
+          // Aktifkan "debug painting" (tekan "p" di konsol, pilih
+          // Tindakan "Toggle Debug Paint" dari Flutter Inspector di Android
+          // Studio, atau perintah "Toggle Debug Paint" di Visual Studio Code)
+          // untuk melihat gambar rangka untuk setiap widget.
           //
-          // Column has various properties to control how it sizes itself and
-          // how it positions its children. Here we use mainAxisAlignment to
-          // center the children vertically; the main axis here is the vertical
-          // axis because Columns are vertical (the cross axis would be
-          // horizontal).
+          // Kolom memiliki berbagai properti untuk mengontrol bagaimana ukurannya sendiri dan
+          // bagaimana memposisikan anak-anaknya. Di sini kita menggunakan mainAxisAlignment untuk
+          // pusatkan anak-anak secara vertikal; sumbu utama di sini adalah vertikal
+          // sumbu karena Kolom vertikal (sumbu silang akan menjadi
+          // mendatar).
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
@@ -109,7 +109,9 @@ class _MyHomePageState extends State<MyHomePage> {
         onPressed: _incrementCounter,
         tooltip: 'Increment',
         child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      ), // Koma tambahan ini membuat pemformatan otomatis lebih baik untuk metode build.
     );
   }
 }
+
+
