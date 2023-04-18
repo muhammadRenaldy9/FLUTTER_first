@@ -36,6 +36,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   nb_utils: ^5.0.5
+  flutter_zoom_drawer: ^3.0.4+1
 
 dev_dependencies:
   flutter_test:
@@ -58,6 +59,18 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+  assets:
+    - images/
+    - images/theme14/
+    - images/theme15/
+    - images/theme15/account_images/
+    - images/theme15/dashboard/
+    - images/theme15/flags/
+    - images/theme15/icons/
+    - images/theme15/payment_images/
+    - images/theme15/pets_images/
+    - images/theme15/pets_screen/
+    - images/theme15/walkthrough_images/
 
   # To add assets to your application, add an assets section, like this:
   # assets:
